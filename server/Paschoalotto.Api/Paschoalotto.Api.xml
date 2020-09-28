@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Paschoalotto.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Paschoalotto.Api.Controllers.DividaController.IncluirDivida(Paschoalotto.Domain.DTO.DividaDTO)">
+            <summary>
+            Incluir uma nova divida
+            </summary>
+            <param name="dto"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="500">Erro interno do servidor</response>
+            <returns></returns>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.DividaController.ListarDivida(System.String)">
+            <summary>
+            Listar as dividas de um devedor pelo documento CPF/CNPJ
+            </summary>
+            <param name="documento"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.DividaController.ListarDividasPorUsuario(System.Guid)">
+            <summary>
+            Listar as dividas de um usuário por seu identificador
+            </summary>
+            <param name="id"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.DividaController.ExcluirDivida(System.Guid)">
+            <summary>
+            Excluir uma divida pelo identifidador
+            </summary>
+            <param name="id"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.ParametrizacaoController.CriarParametrizacao(Paschoalotto.Domain.DTO.Parametrizacao.ParametrizacaoDTO)">
+            <summary>
+            Criar uma parametrização
+            </summary>
+            <param name="dto"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.ParametrizacaoController.AlterarParametrizacao(System.Guid,Paschoalotto.Domain.DTO.Parametrizacao.ParametrizacaoDTO)">
+            <summary>
+            Alterar valores da parametrização
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.ParametrizacaoController.BuscarParametrizacoes">
+            <summary>
+            Buscar parametrização
+            </summary>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.SessaoController.BuscarUsuarioPorCodigoESenha(Paschoalotto.Domain.DTO.Usuario.SessaoDTO)">
+            <summary>
+            Gerar token para autenticação
+            </summary>
+            <param name="dto"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.UsuarioController.ListarUsuarios">
+            <summary>
+            Listar usuários(colaboradores)
+            </summary>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.UsuarioController.CriarUsuario(Paschoalotto.Domain.DTO.UsuarioDTO)">
+            <summary>
+            Incluir um novo usuário(colaborador)
+            </summary>
+            <param name="dto"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.UsuarioController.AlterarUsuario(System.Guid,Paschoalotto.Domain.DTO.UsuarioDTO)">
+            <summary>
+            Alterar os de um usuário(colaborador)
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.UsuarioController.BuscarPorId(System.Guid)">
+            <summary>
+            Buscar usuário(colaborador) pelo seu identificador
+            </summary>
+            <param name="id"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:Paschoalotto.Api.Controllers.UsuarioController.ExcluirUsuario(System.Guid)">
+            <summary>
+            Excluir um usuário(colaborador)
+            </summary>
+            <param name="id"></param>
+            <response code="200">Sucesso no retorno</response>
+            <response code="400">Requisição inválida</response>
+            <response code="401">Requisição não autorizada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+    </members>
+</doc>
